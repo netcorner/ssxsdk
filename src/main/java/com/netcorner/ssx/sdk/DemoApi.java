@@ -13,8 +13,8 @@ public class DemoApi {
 
     public static void main(String[] args) {
 
-        String appid="";
-        String appsecret="";
+        String appid="MrlRI/4ZTH4=";
+        String appsecret="T8h4fFy4E1qGvGeG4UedRV4BWBdXHyCua951D3QRsCbdrReFoyEZag==";
 
 
         AppApi appMarketApi=new AppApi();
@@ -27,8 +27,7 @@ public class DemoApi {
             @Override
             public void invoke(String header) {
                 AppMarketApi appMarketApi=new AppMarketApi();
-                PaginationParam paginationParam=new PaginationParam();
-                System.out.println(appMarketApi.finder(header,paginationParam));
+                System.out.println(appMarketApi.finder(header,null));
             }
         });
     }

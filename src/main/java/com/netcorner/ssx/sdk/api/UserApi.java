@@ -2,7 +2,7 @@ package com.netcorner.ssx.sdk.api;
 
 import com.netcorner.ssx.sdk.ApiDefine;
 import com.netcorner.ssx.sdk.BaseApi;
-import com.qiniu.util.StringMap;
+import java.util.Map;import java.util.HashMap;
 
 
 /**
@@ -27,12 +27,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/lock";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST, GET",requestUrl,header,data);
@@ -54,12 +54,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/del";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST, GET",requestUrl,header,data);
@@ -80,12 +80,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/save";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -107,12 +107,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/reset";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST, GET",requestUrl,header,data);
@@ -133,12 +133,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/finder";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -162,13 +162,13 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/look";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -193,13 +193,13 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/validateUser";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
         data.put("arg2", arg2);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("GET",requestUrl,header,data);
     }
@@ -222,13 +222,13 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/setmobile";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -248,11 +248,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/getuserroles";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -277,13 +277,13 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/loginaction";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
         data.put("arg2", arg2);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST",requestUrl,header,data);
     }
@@ -304,12 +304,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/directlogin";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -329,11 +329,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/getmoreinfo";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -354,12 +354,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/isEntUser";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -380,12 +380,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/logout";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("$method.method",requestUrl,header,data);
@@ -408,12 +408,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/getUserAuthHeader";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("GET",requestUrl,header,data);
     }
@@ -434,12 +434,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/getmoduleactions";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -461,12 +461,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/convertrole";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST, GET",requestUrl,header,data);
@@ -492,14 +492,14 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/setpasswordaction";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
         data.put("arg2", arg2);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -523,12 +523,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/notexisit";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST, GET",requestUrl,header,data);
     }
@@ -550,12 +550,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/dimission";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST, GET",requestUrl,header,data);
@@ -575,11 +575,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/regEstateUser";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -598,11 +598,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/regEstateServiceUser";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -621,11 +621,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/regHouseDemand";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -644,11 +644,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/regHouseSupply";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -667,11 +667,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/regEnt";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -690,11 +690,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/regStaff";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -714,12 +714,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/userRoleSetting";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -740,12 +740,12 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/getUserRoleSetting";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -765,11 +765,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/checksession";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST",requestUrl,header,data);
     }
@@ -788,11 +788,11 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/sessionin";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST",requestUrl,header,data);
     }
@@ -814,14 +814,14 @@ public class UserApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/user/wechatLogin";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
         data.put("arg2", arg2);
         data.put("arg3", arg3);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("GET",requestUrl,header,data);
     }

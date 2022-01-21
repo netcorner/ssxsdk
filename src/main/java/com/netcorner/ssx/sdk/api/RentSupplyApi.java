@@ -2,7 +2,7 @@ package com.netcorner.ssx.sdk.api;
 
 import com.netcorner.ssx.sdk.ApiDefine;
 import com.netcorner.ssx.sdk.BaseApi;
-import com.qiniu.util.StringMap;
+import java.util.Map;import java.util.HashMap;
 
 
 /**
@@ -26,12 +26,12 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/del";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -52,12 +52,12 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/save";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -78,12 +78,12 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/finder";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -105,12 +105,12 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/setStatus";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -132,12 +132,12 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/look";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -161,13 +161,13 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/commend";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -188,12 +188,12 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/demandList";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -217,13 +217,13 @@ public class RentSupplyApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/rentSupply/demandLook";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);

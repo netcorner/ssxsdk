@@ -1,16 +1,14 @@
 package com.netcorner.ssx.sdk;
 
 import com.netcorner.ssx.sdk.ApiDefine;
+import com.netcorner.ssx.utils.OkHttpUtils;
 import com.netcorner.ssx.utils.StringTools;
-import com.qiniu.http.Client;
-import org.apache.log4j.Logger;
 
 /**
  * Created by shijiufeng on 2022/1/15.
  */
 public class Auth {
     private static Long currentTime,serviceTime;
-    private static Logger logger = Logger.getLogger(ApiDefine.class);
 
     public static void validSourceURL(String sign,String timestamp,String userid){
 
@@ -36,26 +34,14 @@ public class Auth {
         }
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/util/getTimestamp";
-        Client client = new Client();
-        try {
-            com.qiniu.http.Response resp = client.get(requestUrl, null);
-            if (resp.statusCode == 200) {
-                currentTime=System.currentTimeMillis();
-                serviceTime=Long.parseLong(resp.bodyString());
-                String header=getHeader(appid,appsecret);
-                authCallback.invoke(header);
-                return;
-            }else{
-                logger.error("==========》当前调用状态为："+resp.statusCode);
-            }
-        } catch (Exception e) {
-            logger.error("错误==========》"+e.toString());
-        }
-        try {
-            throw new Exception("执行错误！");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+        OkHttpUtils okHttpUtils=OkHttpUtils.builder().url(requestUrl);
+        okHttpUtils.addHeader("User-Agent", ApiDefine.USER_AGENT);
+        String jsonString=okHttpUtils.get().sync();
+        currentTime=System.currentTimeMillis();
+        serviceTime=Long.parseLong(jsonString);
+        String header=getHeader(appid,appsecret);
+        authCallback.invoke(header);
     }
 
     /**

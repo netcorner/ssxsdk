@@ -26,20 +26,15 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- 通用工具集 begin -->
-
         <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>1.9.3</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
         </dependency>
 
-        <dependency>
-            <groupId>net.sf.ezmorph</groupId>
-            <artifactId>ezmorph</artifactId>
-            <version>1.0.6</version>
-        </dependency>
-        <!-- 通用工具集 end -->
+
+
+
         <!-- springboot web end -->
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -47,35 +42,15 @@
             <version>3.14.2</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.qiniu</groupId>
-            <artifactId>qiniu-java-sdk</artifactId>
-            <version>7.2.27</version>
-        </dependency>
-        <!-- 七牛云 end-->
-        <!-- json 处理工具 begin -->
 
-        <dependency>
-            <groupId>net.sf.json</groupId>
-            <artifactId>json</artifactId>
-            <version>2.4</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/json-lib-2.4-jdk15.jar</systemPath>
-        </dependency>
-        <!-- json 处理工具 end -->
 
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
+
         <!-- 文档测试接口生成 swagger  begin-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.8.0</version>
         </dependency>
-
         <!-- 文档测试接口生成 swagger end -->
 
     </dependencies>

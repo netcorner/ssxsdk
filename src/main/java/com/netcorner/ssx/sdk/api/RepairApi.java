@@ -2,7 +2,7 @@ package com.netcorner.ssx.sdk.api;
 
 import com.netcorner.ssx.sdk.ApiDefine;
 import com.netcorner.ssx.sdk.BaseApi;
-import com.qiniu.util.StringMap;
+import java.util.Map;import java.util.HashMap;
 
 
 /**
@@ -25,12 +25,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/add";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -52,12 +52,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/del";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -82,12 +82,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/accept";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -108,12 +108,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/finder";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -135,12 +135,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/back";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -161,12 +161,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/edit";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -187,12 +187,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/stat";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -217,12 +217,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/reply";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -243,12 +243,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/export";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
 
@@ -270,12 +270,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/look";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -296,12 +296,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/addAlong";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -328,12 +328,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/appoint";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -360,12 +360,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/appointent";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -386,12 +386,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/exportStat";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
 
@@ -412,12 +412,12 @@ public class RepairApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/repair/editStatus";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);

@@ -2,7 +2,7 @@ package com.netcorner.ssx.sdk.api;
 
 import com.netcorner.ssx.sdk.ApiDefine;
 import com.netcorner.ssx.sdk.BaseApi;
-import com.qiniu.util.StringMap;
+import java.util.Map;import java.util.HashMap;
 
 
 /**
@@ -25,12 +25,12 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/finder";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -51,12 +51,12 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/send";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -76,11 +76,11 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/createsession";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -101,12 +101,12 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/sendgroup";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -128,12 +128,12 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/lastmsg";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -154,12 +154,12 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/setread";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("POST",requestUrl,header,data);
@@ -179,11 +179,11 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/getContacts";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -203,11 +203,11 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/searchpage";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);
@@ -229,12 +229,12 @@ public class MsgApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/msg/getContact";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
 
-        StringMap header=null;
-            header = new StringMap();
+        Map<String,Object> header=null;
+            header = new HashMap<>();
             header.put("authorize",authHeader);
 
             return getObject("GET",requestUrl,header,data);

@@ -2,7 +2,7 @@ package com.netcorner.ssx.sdk.api;
 
 import com.netcorner.ssx.sdk.ApiDefine;
 import com.netcorner.ssx.sdk.BaseApi;
-import com.qiniu.util.StringMap;
+import java.util.Map;import java.util.HashMap;
 
 
 /**
@@ -29,13 +29,13 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/deciphering";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
         data.put("arg2", arg2);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST, GET",requestUrl,header,data);
     }
@@ -53,10 +53,10 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/createmenu";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("GET",requestUrl,header,data);
     }
@@ -78,10 +78,10 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/msg/subscribe";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("GET",requestUrl,header,data);
     }
@@ -99,10 +99,10 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/msg/subscribe";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST",requestUrl,header,data);
     }
@@ -124,12 +124,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/jscode2session";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -155,14 +155,14 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/getticket";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
         data.put("arg2", arg2);
         data.put("arg3", arg3);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -190,7 +190,7 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/loginaction";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
@@ -198,7 +198,7 @@ public class WechatApi  extends BaseApi {
         data.put("arg3", arg3);
         data.put("arg4", arg4);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -220,12 +220,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/getopenid";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -247,12 +247,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/loginauth";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -274,12 +274,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/saveauth";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -301,12 +301,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/wechat/accreditation";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("$method.method",requestUrl,header,data);
     }
@@ -328,12 +328,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/wechat/acticle/list";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("GET",requestUrl,header,data);
     }
@@ -355,12 +355,12 @@ public class WechatApi  extends BaseApi {
         ){
 
         String requestUrl = ApiDefine.HOST_BASE_URL+"/api/auth/user/videocall";
-        StringMap data = new StringMap();
+        Map<String,Object> data = new HashMap<>();
 
         data.put("arg0", arg0);
         data.put("arg1", arg1);
 
-        StringMap header=null;
+        Map<String,Object> header=null;
 
             return getObject("POST",requestUrl,header,data);
     }
